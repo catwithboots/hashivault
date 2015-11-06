@@ -21,5 +21,7 @@ ADD ./vault.json /etc/vault.json
 # Listener API tcp port and telemetry
 EXPOSE 8200 8125
 
-ENTRYPOINT ["/usr/local/bin/vault"]
-CMD [ "server", "-config=/etc/vault/vault.json"]
+#ENTRYPOINT ["/usr/local/bin/vault"]
+#CMD [ "server", "-config=/etc/vault/vault.json"]
+
+CMD ["/usr/local/bin/vault", "server", "-config", "/etc/vault.json"]
