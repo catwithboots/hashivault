@@ -23,4 +23,4 @@ EXPOSE 8200 8125
 
 #CMD ["/usr/local/bin/vault", "server", "-config", "/etc/vault.json"]
 ENTRYPOINT ["/usr/local/bin/vault"]
-CMD [ "server", "-config=/etc/vault/vault.json"]
+CMD [ "server", "-config=/etc/vault.json"]
